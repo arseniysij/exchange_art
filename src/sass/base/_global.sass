@@ -1,0 +1,85 @@
+
+html,
+body
+  min-width: 320px
+  font-family: Gerbera
+  color: $white
+  margin: 0
+  padding: 0
+  -moz-osx-font-smoothings: grayscale
+  -webkit-font-smoothing: antialiased
+  // overflow-x: hidden
+  // scroll-behavior: smooth
+
+h1, h2, h3
+  margin: 0
+
+img
+  width: 100%
+  max-width: 100%
+  height: auto
+
+p
+	margin: 0
+
+button
+	all: unset
+
+*
+	box-sizing: border-box      
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden 
+  position: absolute;
+
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+
+  white-space: nowrap
+
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden  
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+a
+  text-decoration: none
+
+.btn
+  display: inline-block
+  padding: 10px 40px
+  color: $white
+  font-size: 14px
+  line-height: 32px
+  border-radius: 2px
+  letter-spacing: 0.2em
+  text-transform: uppercase
+  cursor: pointer
+  user-select: none
+  transition: background-color 0.3s
+  &:hover
+    background-color: $dark
+    transition: background-color 0.3s
+  &:active
+    background-color: $dark 
+
+.btn--red
+  background-color: $red
+  border: 2px solid $red
+
+.btn--grey
+  border: 2px solid $grey
+  background-color: $grey
+
+// .btn--grey
+//   &:hover
+//     background-color: $dark  
+    // border: 2px solid $dark

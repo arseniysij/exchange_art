@@ -1,0 +1,18 @@
+$dark: #121212
+$white: #ffffff
+$red: #E3000F
+$black: #000000
+$grey: #B2B2B2
+$light-grey: #F7F7F7
+
+// Import fonts
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+@include font('Gerbera', normal, 400, '../fonts/Gerbera.woff2')
+@include font('Gerbera', normal, 700, '../fonts/Gerbera-Bold.woff2')
+@include font('Verdana', normal, 700, '../fonts/Verdana-Bold.woff2')

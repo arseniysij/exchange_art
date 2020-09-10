@@ -1,0 +1,159 @@
+// Import base styles
+@import "libs/normalize"
+@import "base/variables"
+@import "base/mixins"
+@import "base/placeholders"
+@import "base/global"
+
+// Import components styles
+@import "components/components"
+
+// Import layouts styles
+@import "layouts/grid"
+@import "layouts/header"
+@import "layouts/footer"
+
+// Import pages styles
+@import "pages/index"
+
+
+
+.descript
+	padding-top: 50px
+	padding-bottom: 95px 
+	@media (max-width: 576px)
+		padding-bottom: 25px
+
+.section-title
+  margin: 0 auto
+  margin-bottom: 70px
+  @include h1
+  width: 900px
+  color: $dark
+  font-weight: 400
+  text-align: center
+  @media (max-width: 1100px)
+    width: auto
+  @media (max-width: 576px)
+    font-size: 26px
+    line-height: 1.3
+
+.descript__platform
+  margin: 0 auto
+  width: 754px  
+  transform: translate(15%, 0px)
+  overflow: hidden
+  @media (max-width: 1100px)
+    width: 70%
+  @media (max-width: 576px)
+    width: 100% 
+    transform: translate(0)
+  img
+    max-width: 100%
+    transform: translate(0, 4px)
+  
+
+.descript__how
+  display: flex
+  width: 100%  
+  @media (max-width: 576px)
+    flex-direction: column
+
+.descript__block
+  padding: 65px 40px 65px 40px
+  width: 76.8%
+  background-color: $dark
+  @media (max-width: 576px)
+    padding: 
+      left: 5vw
+      right: 5vw
+    width: auto
+
+.descript__header
+  padding-top: 100px
+  width: 23.2%  
+  background: url('../images/corner-bg.svg') no-repeat left / contain
+  @media (max-width: 576px)
+    padding: 40px 0 10px 0
+    margin: 0 auto
+    width: auto
+    background: none
+
+.block-title
+  @include h2
+  font-family: Verdana
+  color: $black
+  font-weight: 700
+
+.descript__list
+  max-width: 663px
+  margin: 0 auto
+
+.descript__list-item
+  margin-bottom: 15px
+
+.list-item--number
+  @include h3
+  color: $red
+  font-weight: 700
+
+.list-item--text
+  @include p  
+  font-weight: 400
+
+.why
+	padding-top: 95px
+	padding-bottom: 125px
+	@media (max-width: 576px)
+		padding-top: 40px
+
+.why-inner
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	@media (max-width: 576px)
+		flex-direction: column
+
+.why__header  
+	max-width: 165px
+	@media (max-width: 576px)
+		max-width: none
+		margin: 0 auto
+		margin-bottom: 40px
+
+.why__block
+	width: 74.2%
+	@media (max-width: 768px)
+		width: 65%
+	@media (max-width: 576px)
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: auto
+		
+
+.why-list
+	display: flex
+	justify-content: space-between
+	margin-bottom: 70px
+	@media (max-width: 768px)
+		flex-direction: column
+  
+.why-list__item
+	width: 30%
+	@media (max-width: 768px)
+		width: 100%
+		&:not(:last-child)
+			margin-bottom: 40px
+
+.wly-list__title 
+	@include h3
+	margin-bottom: 25px
+	color: $red
+	font-weight: 700
+	@media (max-width: 768px)
+		margin-bottom: 15px
+
+.why-list__text
+	@include p
+	color: $dark
