@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
+setTimeout(() => {
+	document.addEventListener('DOMContentLoaded', function () {
   $('body').animate({opacity: 0}, 1000, function() {
     $(this).remove();
 	setTimeout(() => {
@@ -6,3 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
 	}, 3000);
 });
 })
+}, 5000);
